@@ -14,14 +14,14 @@ public class Showtimes {
 	private int movie_id;
 	private String show_time;
 	private String available_seats;
-	private Bookings bookings;
+	private int bookings;
 	
 	public Showtimes() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Showtimes(int id, int movie_id, String show_time, String available_seats, Bookings bookings) {
+	public Showtimes(int id, int movie_id, String show_time, String available_seats, int bookings) {
 		super();
 		this.id = id;
 		this.movie_id = movie_id;
@@ -69,11 +69,11 @@ public class Showtimes {
 		this.available_seats = available_seats;
 	}
 
-	public Bookings getBookings() {
+	public int getBookings() {
 		return bookings;
 	}
 
-	public void setBookings(Bookings bookings) {
+	public void setBookings(int bookings) {
 		this.bookings = bookings;
 	}
 	
